@@ -1,0 +1,17 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Bienvenido!</h2>
+  <p>
+    Esperamos que encuentres lo que estas buscando.
+    <br>Revisa nuestra lista de Peliculas en super resolucion.
+  </p>
+  {{#link-to 'about' class="button"}}
+    Sobre Nosotros
+  {{/link-to}}
+</div>
+{{#each model as |pelicula1|}}
+	{{pelis-listing pelicula=pelicula1}}
+{{/each}}
+{{outlet}}
+
+
